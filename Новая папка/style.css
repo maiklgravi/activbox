@@ -1,0 +1,584 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+    color: #6c7279;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+
+}
+p{
+    margin: 0 0 10px 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.container{
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header.fixed{
+    position: fixed;
+    height: auto;
+    background-color: #31344e;
+}
+.header.fixed .header__iner{
+    padding: 15px 0;
+    border-bottom: 0;
+}
+.header__iner{
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid  #515369;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+.nav__links{
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity .1s linear;
+}
+.nav__links:first-child {
+    margin-left: 0;
+}
+.nav__links:hover {
+    opacity: 1;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 100px;
+    background: #31344e url("img/img1.jpg") center no-repeat ;
+    background-size: cover;
+   
+}
+.intro__title{
+    margin: 0 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+
+}
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro__subtitle{
+    margin: 0 0 60px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.bun{
+    display: inline-block;
+    font-family: inherit;
+    vertical-align: top;
+    font-size: 13px;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 40px;
+    transition: background .1s linear;
+
+
+}
+.bun__red{
+    background-color: #e84545;
+    border-radius: 3px;
+    text-align: center;
+}
+.bun__red:hover {
+    background-color: #dd3434;
+}
+.bun__long{
+    min-width: 280px;
+}
+/* Work
+===================*/
+.work {
+    display: flex;
+    margin: 100px 0;
+    flex-wrap: wrap;
+}
+.work__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+}
+.work__icon {
+    margin-bottom: 25px;
+}
+.work__title {
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.work__text {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.5;
+}
+.colage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.colage__item {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 25%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.colage__content {
+    opacity: 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(232,69,69,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity .2s linear;
+}
+.colage__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+.colage__text {
+    font-size: 14px;
+    color: #fff;
+}
+.colage__img {
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+.colage__item:hover .colage__content{
+    opacity: 1;
+
+}
+.team {
+    margin: 100px 0 70px;
+
+}
+.team__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.team__item{
+    width: 25%;
+    padding: 0 15px;
+}
+.team__img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+.team__name{
+    font-size: 22px;
+    color: #2d3033;
+    margin-bottom: 8px
+
+}
+.team__profesion{
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.team__text{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+    margin-bottom: 20px
+}
+.social{
+    display: flex;
+}
+.social__link{
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+    align-items: center;
+
+}
+.social__link:hover{
+    background-color: #e8ecee;
+}
+.rewiews{
+    overflow: hidden;
+    background-color: #53354a;
+}
+.rewiews__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.rewiews__photo{
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+.rewiews__slaider{
+    height: 500px;
+    overflow: hidden;
+}
+.rewiews__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 50%;
+    padding-left:80px; 
+}
+.rewiews__img{
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%); 
+}
+
+.rewiews__text{
+    font-family: 'Cardo',sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.rewiews__name{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+}
+.downloade{
+
+    padding: 90px 0;
+    text-align: center;
+}
+.downloade__title{
+    font-family: 'Raleway',sans-serif;
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+
+}
+.downloade__text{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.footer{
+    background-color: #3a3e64;
+}
+.footer__iner{
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__block{
+    width: 33.3333333%;
+    padding: 0 15px;
+    align-items: center;
+    text-align: center;
+}
+.footer__title{
+    font-size: 14px;
+    font-weight: 7000;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer__addres{
+    color: rgba(255,255,255,.5);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer__social{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.footer__social .social__link{
+    fill: #fff;
+    border: 3px solid #fff;
+    background-color: transparent;
+}
+.footer__social .social__link:hover{
+    fill:black;
+    background-color: #fff;
+}
+.fotert__down{
+    background-color: 313454;
+    padding: 20px 0;
+}
+.coperait{
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+    line-height: 1.5;
+}
+.coperait span{
+    color: #fff;
+}
+.burger{
+    display: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 9px 2px;
+}
+.burger__item{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    z-index: 1;
+
+}
+
+.burger__item:before{
+    width: 25px;
+    top:-8px;
+
+}
+.burger__item:after{
+    width: 25px;
+    bottom:-8px;
+
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+}
+.slick-dots li {
+    margin: 0 5px;
+}
+.rewiews__slaider.slick-initialized{
+    height: auto;
+}
+.slick-dots button{
+    width: 20px;
+    cursor: pointer;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+    opacity: 0.5;
+}
+..slick-dots button:focus{
+    outline: 0;
+}
+.slick-dots .slick-active button{
+    opacity: 1;
+}
+@media (max-width: 1200px){
+    .colage__item{
+        width: 50%;
+    }
+
+}
+@media (max-width: 991px) {
+    .work__item{
+        width: 50%;
+    }
+    .intro__title {
+        font-size: 40px;
+    }
+    .burger{
+        display: block;
+    }
+    .nav{
+        display: none;
+        position: absolute;
+        background-color: #31344e;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+    }
+    .nav.show {
+        display: flex;
+    }
+    .nav__links{
+        padding: 9px 15px;
+    }
+    .team__item{
+        width: 50%;
+        text-align: center;
+    }
+    .team__img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .social{
+        justify-content: center;
+    }
+    .rewiews__photo{
+        width: 100%;
+    }
+    .rewiews__content{
+        width: 100%;
+    }
+    .rewiews__img{
+        min-width: 991px;
+        right: -15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    
+    .rewiews__text{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    .rewiews__item{
+        padding-bottom: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .colage__item{
+        width: 100%;
+    }
+    .intro{
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+    .intro__title {
+        font-size: 30px;
+    }
+    .intro__subtitle{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .work__item{
+        width: 100%;
+    }
+    .work{
+        margin: 40px 0;
+    }
+    .team{
+        margin:60px 0 30px;
+    }
+    .team__item{
+        width: 100%;
+        text-align: center;
+
+    }
+    .bun__long{
+        min-width: 250px:;
+    }
+    .downloade__title{
+        font-size: 24px;
+    }
+    .footer__block{
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer__block:last-child{
+        margin-bottom: 0;
+    }
+    .footer__iner{
+        padding: 30px 0;
+    }
+}
+@media (max-width: 414px){
+    .rewiews__img{
+        width: 100%;
+        margin: 0;
+        right: -100px;
+    }
+    .rewiews{
+        overflow: hidden;
+
+    }
+}
